@@ -1,7 +1,8 @@
+# NOTE: This is a fork. We are working to improve accessibility and support additional interface customizations.
+
 # React IIIF Viewer
 
 A React component library built on [OpenSeadragon](https://openseadragon.github.io/) for displaying high resolution images with deep zooming capabilities on mobile and desktop. Check out the interactive [Demo](https://eslawski.github.io/react-iiif-viewer/)!
-
 
 
 
