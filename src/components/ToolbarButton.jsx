@@ -10,11 +10,17 @@ const Button = styled.button`
   outline: none;
   cursor: pointer;
   opacity: ${props => props.isDisabled ? .3 : 1}
+
+  outline: 0;
+  &:focus{
+    border: 3px solid #000 !important;
+    outline: 0;
+  }
 `
 
 const ToolbarButton = ({onClickHandler, icon, titleText, isDisabled}) => {
   return (
-    <Button onClick={onClickHandler} title={titleText} isDisabled={isDisabled}>
+    <Button onClick={onClickHandler} title={titleText} isDisabled={isDisabled} tabIndex='0'>
       {icon}
     </Button>
   )

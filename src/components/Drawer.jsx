@@ -29,7 +29,7 @@ const ThumbnailGrid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   @media only screen and (max-width: 800px) {
     grid-template-columns: repeat(2, 1fr) !important;
-}
+  }
 
   &::-webkit-scrollbar-track {
     border-radius: 10px;
@@ -41,7 +41,12 @@ const ThumbnailGrid = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: ${theme.toolbarButtonColor};
+    // background-color: ${theme.toolbarButtonColor};
+    background-color: #c2c2c2;
+
+    &:hover{
+      background-color: #636363;
+    }
   }
 `
 
@@ -95,7 +100,7 @@ const Drawer = ({
             data-testid={`thumbnail-${index}`}
             onClick={() => onThumbnailSelectedHandler(index)}
           >
-            <Thumbnail src={url} />
+            <Thumbnail src={url}/>
           </ThumbnailWrapper>)
         }
       </ThumbnailGrid>

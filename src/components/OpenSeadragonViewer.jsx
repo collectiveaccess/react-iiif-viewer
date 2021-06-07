@@ -11,7 +11,8 @@ const ZOOM_OUT_FACTOR = 1.0 / ZOOM_PER_CLICK;
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  background-color: #202020;
+  // background-color: #202020;
+  background-color: transparent;
 `
 
 class OpenSeadragonViewer extends React.Component {
