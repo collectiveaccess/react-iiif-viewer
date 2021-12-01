@@ -6,7 +6,7 @@ const Button = styled.button`
   display: block !important;
   height: 35px;
   width: 35px;
-  background-color: #939393;
+  background-color: #696969;
   color: #ffffff;
   cursor: pointer;
   border: none;
@@ -18,7 +18,7 @@ const Button = styled.button`
 
   &:focus {
     padding: 2px;
-    border: 3px solid #000 !important;
+    border: 3px solid #939393 !important;
     outline: 0;
   }
 `
