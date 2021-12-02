@@ -18,7 +18,7 @@ const Button = styled.button`
 
   &:focus {
     padding: 2px;
-    border: 3px solid #696969 !important;
+    border: 3px solid #fff !important;
     outline: 0;
   }
 `
