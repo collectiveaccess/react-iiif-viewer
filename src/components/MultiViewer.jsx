@@ -177,11 +177,6 @@ class MultiViewer extends React.Component {
           />
         </ViewerWrapper>
 
-        <ZoomControls
-          zoomInHandler={() => this.zoomIn()}
-          zoomOutHandler={() => this.zoomOut()}
-        />
-
         {FullScreenAPI.isEnabled() &&
             <FullScreenControls
               isInFullScreen={this.state.isInFullScreen}
@@ -189,6 +184,11 @@ class MultiViewer extends React.Component {
               exitFullScreenHandler={() => this.exitFullScreen()}
           />
         }
+
+        <ZoomControls
+          zoomInHandler={() => this.zoomIn()}
+          zoomOutHandler={() => this.zoomOut()}
+        />
 
         {this.props.showToolbar &&
           <Toolbar
