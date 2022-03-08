@@ -30,7 +30,7 @@ const ZoomControls = ({zoomInHandler, zoomOutHandler}) => {
         icon={<span className="material-icons">zoom_in</span>}
         titleText='zoom in'
         className='zoom-in'
-        tabIndex="2"
+        tabIndex="0"
         ariaLabel={"button to enter fullscreen mode"}
       />
       <ViewerButton
@@ -39,7 +39,7 @@ const ZoomControls = ({zoomInHandler, zoomOutHandler}) => {
         icon={<span className="material-icons">zoom_out</span>}
         titleText='zoom out'
         className='zoom-in'
-        tabIndex="3"
+        tabIndex="0"
         ariaLabel={"button to enter fullscreen mode"}
       />
     </Container>
