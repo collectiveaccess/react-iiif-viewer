@@ -21,6 +21,8 @@ const FullScreenControls = ({isInFullScreen, enterFullScreenHandler, exitFullScr
         onClickHandler={exitFullScreenHandler}
         titleText='exit fullscreen'
         className='exit-fullscreen'
+        tabIndex="0"
+        arialabel={"button to exit fullscreen mode"}
       />
     }
 
@@ -30,6 +32,8 @@ const FullScreenControls = ({isInFullScreen, enterFullScreenHandler, exitFullScr
       onClickHandler={enterFullScreenHandler}
       titleText='enter fullscreen'
       className='enter-fullscreen'
+      tabIndex="0"
+      arialabel={"button to enter fullscreen mode"}
     />
   }
 
