@@ -33,7 +33,7 @@ const FullScreenControls = ({isInFullScreen, enterFullScreenHandler, exitFullScr
       titleText='enter fullscreen'
       className='enter-fullscreen'
       tabIndex="0"
-      arialabel={"button to enter fullscreen mode"}
+      ariaLabel={"button to enter fullscreen mode"}
     />
   }
 

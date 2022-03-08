@@ -23,9 +23,9 @@ const Button = styled.button`
   }
 `
 
-const ViewerButton = ({onClickHandler, icon, titleText, className, tabIndex, arialabel}) => {
+const ViewerButton = ({onClickHandler, icon, titleText, className, tabIndex, ariaLabel}) => {
   return (
-    <Button onClick={onClickHandler} title={titleText} className={className} tabIndex={tabIndex} aria-label={arialabel}>
+    <Button onClick={onClickHandler} title={titleText} className={className} tabIndex={tabIndex} aria-label={ariaLabel}>
       {icon}
     </Button>
   )
@@ -37,7 +37,7 @@ ViewerButton.propTypes = {
   titleText: PropTypes.string,
   className: PropTypes.string,
   tabIndex: PropTypes.string,
-  arialabel: PropTypes.string
+  ariaLabel: PropTypes.string
 }
 
 export default ViewerButton
