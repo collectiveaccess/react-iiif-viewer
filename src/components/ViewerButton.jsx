@@ -35,6 +35,9 @@ ViewerButton.propTypes = {
   onClickHandler: PropTypes.func,
   // icon: PropTypes.element,
   titleText: PropTypes.string,
+  className: PropTypes.string,
+  tabIndex: PropTypes.string,
+  arialabel: PropTypes.string
 }
 
 export default ViewerButton
