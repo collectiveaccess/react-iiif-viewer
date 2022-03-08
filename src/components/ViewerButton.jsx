@@ -16,7 +16,7 @@ const Button = styled.button`
   padding: 2px;
   border: 3px solid transparent;
 
-  &:focus {
+  :focus {
     padding: 2px;
     border: 3px solid #fff !important;
     outline: 0;
