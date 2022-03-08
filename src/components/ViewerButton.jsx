@@ -13,11 +13,11 @@ const Button = styled.button`
   border-radius: 4px;
 
   outline: none;
-  padding: 2px;
+  // padding: 2px;
   border: 3px solid transparent;
 
   :focus {
-    padding: 2px;
+    // padding: 2px;
     border: 3px solid #fff !important;
     outline: 0;
   }
