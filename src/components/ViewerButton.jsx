@@ -25,7 +25,7 @@ const Button = styled.button`
 
 const ViewerButton = ({onClickHandler, icon, titleText, className, tabIndex, ariaLabel}) => {
   return (
-    <Button onClick={onClickHandler} title={titleText} className={className} tabIndex={tabIndex} aria-label={ariaLabel}>
+    <Button onClick={onClickHandler} tabIndex={tabIndex} aria-label={ariaLabel} title={titleText} className={className}>
       {icon}
     </Button>
   )
