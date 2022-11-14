@@ -22,6 +22,13 @@ const Container = styled.div`
   height: ${props => props.viewerHeight};
   display: flex;
   flex-direction: column;
+  border: 1px solid #000;
+  outline: 0;
+
+  &:focus {
+    border: 3px solid #000;
+    outline: 0;
+  }
 
   &.fullscreen {
     height: 100%;
@@ -152,6 +159,7 @@ class MultiViewer extends React.Component {
         viewerWidth={this.props.width}
         viewerHeight={this.props.height}
         data-cur-iiif-url={this.props.iiifUrls[this.state.currentIndex]}
+        tabIndex='0'
       >
 
         <ViewerWrapper>
@@ -169,11 +177,6 @@ class MultiViewer extends React.Component {
           />
         </ViewerWrapper>
 
-        <ZoomControls
-          zoomInHandler={() => this.zoomIn()}
-          zoomOutHandler={() => this.zoomOut()}
-        />
-
         {FullScreenAPI.isEnabled() &&
             <FullScreenControls
               isInFullScreen={this.state.isInFullScreen}
@@ -181,6 +184,11 @@ class MultiViewer extends React.Component {
               exitFullScreenHandler={() => this.exitFullScreen()}
           />
         }
+
+        <ZoomControls
+          zoomInHandler={() => this.zoomIn()}
+          zoomOutHandler={() => this.zoomOut()}
+        />
 
         {this.props.showToolbar &&
           <Toolbar

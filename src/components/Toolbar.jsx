@@ -7,13 +7,14 @@ const Container = styled.div`
   display: flex;
   height: ${theme.toolbarHeight};
   width: 100%;
-  background-color: #000000;
+  background-color: #939393;
 `
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+
 `
 
 const Center = styled.div`
@@ -21,6 +22,7 @@ const Center = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
 `
 
 const Right = styled.div`
@@ -28,6 +30,7 @@ const Right = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
 `
 
 const Toolbar = ({left, center, right}) => {

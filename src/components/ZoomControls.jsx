@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from "@emotion/styled";
 import ViewerButton from './ViewerButton'
-import Plus from '../images/plus.svg'
-import Minus from '../images/minus.svg'
+// import Plus from '../images/plus.svg'
+// import Minus from '../images/minus.svg'
 
 const Container = styled.div`
   position: absolute;
@@ -13,7 +13,7 @@ const Container = styled.div`
 
   & button:first-of-type  {
     border-radius: 4px 4px 0 0;
-    border-bottom: 1px solid #A9A9A9 !important;
+    border-bottom: 1px solid #ffffff;
   }
 
   & button:last-of-type {
@@ -26,13 +26,21 @@ const ZoomControls = ({zoomInHandler, zoomOutHandler}) => {
     <Container>
       <ViewerButton
         onClickHandler={zoomInHandler}
-        icon={<Plus/>}
+        // icon={<Plus/>}
+        icon={<span className="material-icons">zoom_in</span>}
         titleText='zoom in'
+        className='zoom-in'
+        tabIndex="0"
+        ariaLabel={"button to enter fullscreen mode"}
       />
       <ViewerButton
         onClickHandler={zoomOutHandler}
-        icon={<Minus/>}
+        // icon={<Minus/>}
+        icon={<span className="material-icons">zoom_out</span>}
         titleText='zoom out'
+        className='zoom-in'
+        tabIndex="0"
+        ariaLabel={"button to enter fullscreen mode"}
       />
     </Container>
   )
